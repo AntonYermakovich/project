@@ -418,7 +418,7 @@ body {
   }
   .header .menu {
     position: absolute;
-    right: -100%;
+    left: -100%;
     top: 0;
     background: #ddd;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
@@ -431,7 +431,7 @@ body {
     transition: 0.25s;
   }
   .header .menu_show {
-    right: 0;
+    left: 0;
   }
   .header .menu__icons {
     display: flex;
