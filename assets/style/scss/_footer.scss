@@ -1,0 +1,99 @@
+.footer {
+  width: 100%;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+    border-bottom: 2px solid var(--dark-content);
+  }
+
+  &__bottom {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+
+      span {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right, var(--blue-color), var(--pink-color) 150%);
+
+        &:nth-child(2) {
+            background-image: linear-gradient(to right, var(--blue-color) -60%, var(--pink-color));
+        }
+        &:last-child {
+            color: var(--pink-color);
+        }
+      }
+    }
+
+    .menu {
+      display: flex;
+      gap: 52px;
+
+      &__item {
+        list-style: none;
+      }
+
+      &__link {
+        text-decoration: none;
+        color: var(--title-color);
+        font-family: "DM Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        transition: 0.15s;
+
+        &:hover {
+          color: var(--pink-color);
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    a {
+      text-decoration: none;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      color: var(--title-color);
+      transition: 0.15s;
+
+      &:hover {
+        color: var(--dark-content);
+      }
+    }
+
+    .socials {
+      display: flex;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: var(--title-color);
+          transition: 0.15s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
